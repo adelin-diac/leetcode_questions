@@ -1,3 +1,5 @@
+# CAN IMPROVE BY DOING WITHOUT CONVERTING TO STRING
+
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if(x<0): return False

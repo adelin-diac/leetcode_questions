@@ -21,9 +21,8 @@ def main():
   """Read from stdin, solve the problem, write answer to stdout."""
 #   input = sys.stdin.readline().split()
 #   A = [int(x) for x in input[0].split(",")]
-  A = [1,2,3,4,5, 5, 6, 7]
+  A = [1,2,3,4,5,5,6,7]
   sys.stdout.write(str(solution(A)))
-
 
 if __name__ == "__main__":
   main()

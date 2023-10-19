@@ -6,16 +6,6 @@ class ListNode:
         self.val = val
         self.next = next
     
-    def length(self):
-        temp = self.val
-        count = 0
-
-        while temp:
-            count += 1
-            temp = temp.next
-        
-        return count
-    
         
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:

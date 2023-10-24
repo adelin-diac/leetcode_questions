@@ -26,5 +26,26 @@ class Solution:
             current.next = list2
 
         return dummy.next
+    
+    def mergeTwoLists2(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode(-1)
+        current = dummy
+
+        while list1 and list2:
+            if list1.val > list2.val:
+                current.next = list2
+                list2 = list2.next
+            else:
+                current.next = list1
+                list1 = list1.next
+            current = current.next
+
+        if list2:
+            current.next = list2
+        if list1:
+            current.next = list1
+
+        return dummy.next
 
 print(Solution().mergeTwoLists(ListNode(2, ListNode(3, ListNode(5))), ListNode(4)))
+print(Solution().mergeTwoLists2(ListNode(2, ListNode(3, ListNode(5))), ListNode(4)))

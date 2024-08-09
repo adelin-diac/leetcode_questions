@@ -1,4 +1,14 @@
-# CAN IMPROVE BY DOING WITHOUT CONVERTING TO STRING
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        rev = 0
+        val = x
+        while val > 0:
+            last_digit = val % 10
+            rev = rev*10 + last_digit
+            val = val // 10
+        print(rev)
+        return rev == x
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
